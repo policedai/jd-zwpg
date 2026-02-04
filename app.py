@@ -168,7 +168,7 @@ if uploaded_file:
     with col2:
         st.subheader("📊 批改报告")
         
-        if st.button("🚀 开始 AI 阅卷"):
+        if st.button("🚀 开始阅卷"):
             with st.spinner(f"正在调取北京{exam_choice}评分标准..."):
                 img_b64 = encode_image(uploaded_file)
                 st.session_state.report_text = grade_essay(img_b64, exam_choice)
@@ -192,4 +192,5 @@ if uploaded_file:
                 use_container_width=True
             )
 else:
+
     st.info("💡 请在左侧侧边栏上传作文图片（支持中考/高考标准）。")
