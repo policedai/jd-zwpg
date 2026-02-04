@@ -134,7 +134,7 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-st.title("📝 北京中高考英语作文批改")
+st.title("📝 玛丽北京中高考英语作文批改")
 
 if "report_text" not in st.session_state:
     st.session_state.report_text = None
@@ -194,3 +194,4 @@ if uploaded_file:
 else:
 
     st.info("💡 请在左侧侧边栏上传作文图片（支持中考/高考标准）。")
+
